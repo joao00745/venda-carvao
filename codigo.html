@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LenhaMax - Lenha de Qualidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .bg-orange-50 {
+            background-color: #fff7ed;
+        }
+        .bg-orange-500 {
+            background-color: #f97316;
+        }
+        .hover\:bg-orange-600:hover {
+            background-color: #ea580c;
+        }
+        .text-orange-500 {
+            color: #f97316;
+        }
+        .border-orange-500 {
+            border-color: #f97316;
+        }
+        .focus\:ring-orange-500:focus {
+            --tw-ring-color: #f97316;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="flame" class="h-8 w-8 text-orange-500"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">LenhaMax</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#produtos" class="text-gray-600 hover:text-orange-500 transition-colors">
+                        Produtos
+                    </a>
+                    <a href="#sobre" class="text-gray-600 hover:text-orange-500 transition-colors">
+                        Sobre
+                    </a>
+                    <a href="#contato" class="text-gray-600 hover:text-orange-500 transition-colors">
+                        Contato
+                    </a>
+                </nav>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md flex items-center">
+                    <i data-lucide="phone" class="h-4 w-4 mr-2"></i>
+                    Ligar Agora
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">
+                Lenha de Qualidade para seu
+                <span class="text-orange-500"> Conforto</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Fornecemos lenha seca e selecionada para lareiras, fornos e churrasqueiras. Entrega rápida e preços que
+                cabem no seu bolso.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-md">
+                    Ver Produtos
+                </button>
+                <button class="border border-gray-300 text-lg px-8 py-3 rounded-md bg-transparent">
+                    Solicitar Orçamento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Por que escolher a LenhaMax?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="flex justify-center mb-4"><i data-lucide="flame" class="h-8 w-8 text-orange-500"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Lenha Seca</h4>
+                    <p class="text-gray-600">Todas as nossas lenhas passam por processo de secagem natural</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-4"><i data-lucide="truck" class="h-8 w-8 text-blue-500"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Entrega Rápida</h4>
+                    <p class="text-gray-600">Entregamos em -----</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-4"><i data-lucide="shield" class="h-8 w-8 text-green-500"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Qualidade Garantida</h4>
+                    <p class="text-gray-600">Lenhas selecionadas e testadas para máximo rendimento</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-4"><i data-lucide="star" class="h-8 w-8 text-yellow-500"></i></div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Melhor Preço</h4>
+                    <p class="text-gray-600">Preços competitivos direto do produtor para você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Nossos Produtos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Produto 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow relative">
+                    <span class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded-md">Mais Vendido</span>
+                    <div class="p-0">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lenha de Eucalipto" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold mb-2">Lenha de Eucalipto</h4>
+                        <p class="text-gray-600 mb-3">Lenha seca de eucalipto, ideal para lareiras e fornos</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">R$ 13,00</span>
+                                <span class="text-sm text-gray-500 ml-1">/saco 10kg</span>
+                            </div>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-sm">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-0">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lenha de Aroeira" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold mb-2">Lenha de Aroeira</h4>
+                        <p class="text-gray-600 mb-3">Lenha premium de aroeira, queima lenta e duradoura</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">R$ 13,00</span>
+                                <span class="text-sm text-gray-500 ml-1">/saco 10kg</span>
+                            </div>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-sm">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-0">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lenha de Angico" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold mb-2">Lenha de Angico</h4>
+                        <p class="text-gray-600 mb-3">Lenha de angico, excelente poder calorífico</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">R$ 13,00</span>
+                                <span class="text-sm text-gray-500 ml-1">/saco 10kg</span>
+                            </div>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-sm">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="p-0">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lenha Mista" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold mb-2">Lenha Mista</h4>
+                        <p class="text-gray-600 mb-3">Mix de lenhas selecionadas, ótimo custo-benefício</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">R$ 10,00</span>
+                                <span class="text-sm text-gray-500 ml-1">/saco 10kg</span>
+                            </div>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-sm">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Sobre a LenhaMax</h3>
+                    <p class="text-gray-600 mb-4">
+                        Com mais de 15 anos de experiência no mercado, a LenhaMax é referência em fornecimento de lenha de
+                        qualidade na região. Nossa empresa familiar cresceu mantendo sempre o compromisso com a excelência e
+                        satisfação do cliente.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Trabalhamos apenas com madeiras selecionadas, passando por rigoroso processo de secagem natural para
+                        garantir o melhor rendimento e menor produção de fumaça.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500">15+</div>
+                            <div class="text-sm text-gray-600">Anos de Experiência</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500">5000+</div>
+                            <div class="text-sm text-gray-600">Clientes Satisfeitos</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="/placeholder.svg?height=400&width=500"
+                        alt="Sobre a LenhaMax"
+                        class="w-full h-96 object-cover rounded-lg shadow-lg"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Entre em Contato</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-6">Informações de Contato</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="h-5 w-5 text-orange-500"></i>
+                            <span class="text-gray-600">(42) 99990-0031</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="h-5 w-5 text-orange-500"></i>
+                            <span class="text-gray-600">contato@lenhamax.com.br</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-orange-500"></i>
+                            <span class="text-gray-600">Rua das Lenhas, 123 - Tibagi, PR</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h5 class="text-lg font-semibold text-gray-800 mb-4">Horário de Funcionamento</h5>
+                        <div class="space-y-2 text-gray-600">
+                            <div>Segunda a Sexta: 8h às 18h</div>
+                            <div>Sábado: 8h às 14h</div>
+                            <div>Domingo: Fechado</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Solicite um Orçamento</h4>
+                        <p class="text-gray-600 mb-6">Preencha o formulário e entraremos em contato</p>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                                <input
+                                    type="text"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Seu nome completo"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                                <input
+                                    type="tel"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="(11) 99999-9999"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Tipo de Lenha</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option>Selecione o tipo</option>
+                                    <option>Eucalipto</option>
+                                    <option>Aroeira</option>
+                                    <option>Angico</option>
+                                    <option>Mista</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Quantidade (sacos)</label>
+                                <input
+                                    type="number"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Quantidade desejada"
+                                    min="1"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                                <textarea
+                                    rows="3"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Informações adicionais..."
+                                ></textarea>
+                            </div>
+                            <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md">
+                                Enviar Solicitação
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="flame" class="h-6 w-6 text-orange-500"></i>
+                        <h5 class="text-xl font-bold">LenhaMax</h5>
+                    </div>
+                    <p class="text-gray-400">Fornecendo lenha de qualidade para toda a região.</p>
+                </div>
+                <div>
+                    <h6 class="text-lg font-semibold mb-4">Links Rápidos</h6>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <a href="#produtos" class="hover:text-white transition-colors">
+                                Produtos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sobre" class="hover:text-white transition-colors">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="hover:text-white transition-colors">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-lg font-semibold mb-4">Contato</h6>
+                    <div class="space-y-2 text-gray-400">
+                        <div>(42) 99990-0031</div>
+                        <div>contato@lenhamax.com.br</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LenhaMax. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
